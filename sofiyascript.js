@@ -309,7 +309,7 @@ function takeCommand(message, called) {
 }
 
 // coding se related qustion
-} else if (message.includes("what is a variable")) {
+ else if (message.includes("what is a variable")) {
   speak("Sir, a variable is a container to store data in programming.");
   handled = true;
 
@@ -384,7 +384,7 @@ function takeCommand(message, called) {
 } else if (message.includes("debug my code")) {
   speak("Sir, debugging means finding and fixing errors in your program.");
   handled = true;
-}
+
   // React se related qustion
   } else if (message.includes("what is react")) {
   speak("Sir, React is a JavaScript library for building user interfaces.");
@@ -463,7 +463,7 @@ function takeCommand(message, called) {
   handled = true;
 }
   // HTML se related qustion
-  } else if (message.includes("what is html")) {
+   else if (message.includes("what is html")) {
   speak("Sir, HTML stands for HyperText Markup Language. It is used to create the structure of web pages.");
   handled = true;
 
@@ -545,7 +545,7 @@ function takeCommand(message, called) {
 }
 
 // drink se relatd
-} else if (message.includes("i want tea")) {
+ else if (message.includes("i want tea")) {
   speak("Sure sir, hot tea is ready for you in imagination. Don’t forget real tea!");
   handled = true;
 
@@ -598,7 +598,7 @@ function takeCommand(message, called) {
   handled = true;
 }
 // Java script about function
-} else if (message.includes("what is javascript")) {
+ else if (message.includes("what is javascript")) {
   speak("JavaScript is a high level programming language used for web development. It makes websites interactive.");
   handled = true;
 
