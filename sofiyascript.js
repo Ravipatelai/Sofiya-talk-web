@@ -42,12 +42,18 @@ function speak(text) {
 
 function wishMe() {
   let hours = new Date().getHours();
-  if (hours >= 4 && hours < 12) speak("Good Morning Sir");
-  else if (hours >= 12 && hours < 17) speak("Good Afternoon Sir");
-  else if (hours >= 17 && hours < 22) speak("Good Evening Sir");
-  else if (hours >= 22 && hours < 3) speak("Good Night Sir");
-  else speak(" present sir ");
+
+  if (hours >= 4 && hours < 12) {
+    speak("Good Morning Sir");
+  } else if (hours >= 12 && hours < 17) {
+    speak("Good Afternoon Sir");
+  } else if (hours >= 17 && hours < 22) {
+    speak("Good Evening Sir");
+  } else {
+    speak("Good Night Sir");
+  }
 }
+
 // 🕒 Reminder system
 function setReminder(reminderTime, message) {
   setInterval(() => {
@@ -1009,7 +1015,7 @@ else if (message.includes("junk food in market")) {
 
 
    else if (message.includes("hello") || message.includes("start") || message.includes("hi")) {
-    speak("Yes sir, how are you today?");
+    speak("Yes sir, how can help you today?");
     handled = true;
   } else if (message.includes("who are you")) {
     speak("I am  your virtual assistant created by Ravi Sir");
